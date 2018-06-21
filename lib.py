@@ -70,7 +70,7 @@ class LivePlot:
                 else:
                     data_item.addPoints(xs, ys)
             else:
-                data_item = self.plot_data_item(xs, ys, size=10, pen=pg.mkPen(None))
+                data_item = pg.ScatterPlotItem(xs, ys, size=10, pen=pg.mkPen(None))
 
                 if color != None:
                     data_item.setBrush(pg.mkBrush(color))
